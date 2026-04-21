@@ -1,96 +1,190 @@
 <div align="center">
-  <h1>AlgoForge: Python Algorithmic Architecture</h1>
-  <p>
-    <i>An enterprise-grade, curated roadmap of 300 optimal Data Structures and Algorithms solutions.</i>
-  </p>
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.14+-blue.svg?logo=python&logoColor=white" alt="Python" />
-    <img src="https://img.shields.io/badge/Algorithms-300_Solved-success.svg?logo=leetcode" alt="Algorithms" />
-    <img src="https://img.shields.io/badge/Code_Quality-A%2B-purple.svg" alt="Quality" />
-    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained" />
-  </p>
-</div>
 
-<hr/>
+<br/>
 
-## 🎯 Executive Summary
-
-Welcome to the definitive Python Data Structures and Algorithms repository. Built originally as the core algorithmic engine for **AlgoForge**, this repository distills the 300 most critical technical interview and competitive programming problems into clean, production-ready Python code. 
-
-Rather than fragmented, cryptic one-liners, this codebase emphasizes **pedagogical clarity, space-time optimality, and modular design**. Every solution acts as a blueprint for mastering advanced algorithmic patterns.
-
-## 🧠 Architectural Philosophy
-
-This repository strictly adheres to senior-level development principles:
-- **Big-O Transparency**: Every module explicitly documents asymptotic Time $O(T)$ and Space $O(S)$ complexities at the file level.
-- **Pythonic Idioms**: Maximum utilization of Python's standard library (`collections.deque`, `heapq`, `bisect`, `itertools`) over reinventing primitives.
-- **Self-Documenting Code**: Avoidance of cryptic variables. We utilize semantic naming conventions making the logic universally readable and maintainable.
-- **Object-Oriented Encapsulation**: Solutions are rigorously encapsulated within standard `class Solution:` architectures, mocking real-world execution environments.
-
-## 🗂 Systematic Curriculum
-
-The repository is organized chronologically by pattern complexity, ensuring a natural progression of algorithmic intuition.
-
-```text
-📦 AlgoForge-Python-Core
- ┣ 📂 1_Arrays_and_Hashing               # 40 files  - Prefix Sums, Sliding Windows
- ┣ 📂 2_Linked_Lists                     # 25 files  - Fast/Slow Pointers, Reversal
- ┣ 📂 3_Stacks_and_Queues                # 20 files  - Monotonic Stacks, Deques
- ┣ 📂 4_Binary_Search                    # 25 files  - Search Spaces, Optimization
- ┣ 📂 5_Trees                            # 45 files  - BST, Tries, Traversals (DFS/BFS)
- ┣ 📂 6_Recursion_and_Backtracking       # 25 files  - Decision Trees, State Pruning
- ┣ 📂 7_Graphs                           # 40 files  - Dijkstra, Union-Find, Topological Sort
- ┣ 📂 8_Heaps_and_Priority_Queues        # 15 files  - K-Way Merges, Two Heaps
- ┣ 📂 9_Dynamic_Programming              # 50 files  - Memoization, 1D/2D Tabulation
- ┗ 📂 10_Greedy_and_Bit_Manipulation     # 15 files  - Local Optima, XOR Magic
+```
+ █████╗ ██╗      ██████╗  ██████╗ ███████╗ ██████╗ ██████╗  ██████╗ ███████╗
+██╔══██╗██║     ██╔════╝ ██╔═══██╗██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
+███████║██║     ██║  ███╗██║   ██║█████╗  ██║   ██║██████╔╝██║  ███╗█████╗
+██╔══██║██║     ██║   ██║██║   ██║██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
+██║  ██║███████╗╚██████╔╝╚██████╔╝██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
+╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 ```
 
-## 💻 Implementation Example
+**Python · Data Structures & Algorithms · 300 Problems**
 
-Our implementations strip away noise to reveal the pure algorithm. Below is our benchmark standard, utilizing hash maps to achieve strict $O(N)$ runtime limits.
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Problems](https://img.shields.io/badge/Problems-300_Solved-22c55e?style=for-the-badge&logo=leetcode&logoColor=white)](.)
+[![Complexity](https://img.shields.io/badge/Complexity-Annotated-8b5cf6?style=for-the-badge)](.)
+[![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge)](LICENSE)
+[![PRs](https://img.shields.io/badge/PRs-Welcome-0ea5e9?style=for-the-badge)](CONTRIBUTING.md)
+
+<br/>
+
+> *"A junior should be able to read it. A senior should respect it."*
+
+<br/>
+
+</div>
+
+---
+
+## What is AlgoForge?
+
+AlgoForge is the algorithmic core originally built for the **AlgoForge** platform — now open-sourced as a structured, opinionated reference for engineers preparing for senior-level technical interviews or sharpening competitive programming instincts.
+
+Every solution was written with one rule: **no cryptic one-liners, no unexplained cleverness.** Just clean, well-documented, complexity-aware Python — the kind of code that gets written in real engineering environments.
+
+<br/>
+
+## Design Principles
+
+```
+┌─────────────────────────────┬────────────────────────────────────────────────┐
+│ Principle                   │ What it means in practice                      │
+├─────────────────────────────┼────────────────────────────────────────────────┤
+│ Big-O Transparency          │ T: O(...) and S: O(...) declared on every file  │
+│ Pythonic by Default         │ collections · heapq · bisect · itertools        │
+│ Self-Documenting Names      │ complement, left_ptr — never x, tmp, arr2      │
+│ Consistent Structure        │ class Solution: wraps every solution            │
+└─────────────────────────────┴────────────────────────────────────────────────┘
+```
+
+<br/>
+
+## Repository Layout
+
+```
+AlgoForge-Python-Core/
+│
+├── 1_Arrays_and_Hashing/           ── 40 problems  ─  Prefix sums, sliding windows
+├── 2_Linked_Lists/                 ── 25 problems  ─  Fast/slow pointers, reversal
+├── 3_Stacks_and_Queues/            ── 20 problems  ─  Monotonic stacks, deques
+├── 4_Binary_Search/                ── 25 problems  ─  Search space, optimization
+├── 5_Trees/                        ── 45 problems  ─  BST, Tries, DFS/BFS
+├── 6_Recursion_and_Backtracking/   ── 25 problems  ─  Decision trees, pruning
+├── 7_Graphs/                       ── 40 problems  ─  Dijkstra, Union-Find, Topo
+├── 8_Heaps_and_Priority_Queues/    ── 15 problems  ─  K-way merges, two-heap
+├── 9_Dynamic_Programming/          ── 50 problems  ─  Memoization, 1D/2D tables
+└── 10_Greedy_and_Bit_Manipulation/ ── 15 problems  ─  Local optima, XOR tricks
+```
+
+> Problems are ordered by **pattern complexity** — following the repo top-to-bottom is a full curriculum, not a random walk.
+
+<br/>
+
+## Code Standard
+
+Every solution follows this exact format. No exceptions.
 
 ```python
 """
-1. Two Sum
-
-Time Complexity: O(N)
-Space Complexity: O(N)
+╔══════════════════════════════════════════════════════════╗
+║  Problem   :  Two Sum  (#1)                              ║
+║  Difficulty:  Easy                                       ║
+║  Pattern   :  Hash Map / Complement Lookup               ║
+╠══════════════════════════════════════════════════════════╣
+║  Time      :  O(N)                                       ║
+║  Space     :  O(N)                                       ║
+╠══════════════════════════════════════════════════════════╣
+║  Approach  :  For each element, check whether its        ║
+║  complement (target - num) was seen before.              ║
+║  Store each index as we go — single pass, no sorting.    ║
+╚══════════════════════════════════════════════════════════╝
 """
 from typing import List
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        value_to_index = {} # Tracks previously seen elements
-        
-        for current_index, num in enumerate(nums):
+        seen: dict[int, int] = {}  # value → index
+
+        for current_idx, num in enumerate(nums):
             complement = target - num
-            if complement in value_to_index:
-                return [value_to_index[complement], current_index]
-            value_to_index[num] = current_index
-            
-        return []
+
+            if complement in seen:
+                return [seen[complement], current_idx]
+
+            seen[num] = current_idx
+
+        return []  # Guaranteed solution exists per problem constraints
 ```
 
-## ⚙️ Development Setup
+**What separates this from a raw LeetCode submission:**
 
-This project uses modern Python standards. We recommend using a virtual environment to isolate any future testing dependencies (e.g., `pytest`).
+- The docstring explains *why*, not just *what*
+- Type hints on local variables where intent is ambiguous
+- Inline comment on `seen` clarifies its semantic role at a glance
+- `return []` annotated to show constraint awareness — signals deep problem understanding
+
+<br/>
+
+## Stats at a Glance
+
+```
+  300 problems  ·  10 categories  ·  100% complexity-annotated  ·  0 external dependencies
+```
+
+<br/>
+
+## Getting Started
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/soumya-101-chk/Python-300-DSA-Questions-And-Answers.git
+# 1. Clone
+git clone https://github.com/soumyachk101/Python-300-DSA-Questions-And-Answers.git
+cd Python-300-DSA-Questions-And-Answers
 
-# 2. Navigate into the directory
-cd "Python-300-DSA-Questions-And-Answers"
-
-# 3. Setup your environment (Optional but recommended)
+# 2. Isolated environment (recommended)
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# 3. Run any solution directly
+python3 1_Arrays_and_Hashing/two_sum.py
 ```
 
-## 🤝 Contribution Guidelines
+No pip installs required. The standard library is all you need.
 
-This repository is primarily maintained as a curated roadmap. However, if you discover an edge-case failure, suboptimal complexity, or wish to add comprehensive `pytest` suites:
-1. Fork the repository
-2. Create a semantic branch (`feat/add-dijkstra-tests`, `fix/two-sum-edge-case`)
-3. Ensure the Time and Space complexity docstrings are accurate.
-4. Open a Pull Request detailing the optimization.
+<br/>
+
+## Contributing
+
+This is a curated repo — quality over quantity. PRs are reviewed for:
+
+| Type | Accepted if... |
+|---|---|
+| Bug fixes | Breaks a real edge case with proof |
+| Complexity improvements | Genuinely better asymptotic bound |
+| Test suites | Full `pytest` coverage for a module |
+
+**Before opening a PR:**
+1. Fork → create a semantic branch (`fix/two-sum-negative-nums`, `feat/dijkstra-tests`)
+2. Confirm docstring complexity annotations are accurate
+3. Match the code style above exactly — same docstring format, same structure
+4. Write a one-paragraph PR description explaining the *why*
+
+> Submissions that "also work" without improving clarity or complexity will be respectfully declined.
+
+<br/>
+
+## Roadmap
+
+- [ ] `pytest` suite for all 300 problems
+- [ ] `PATTERNS.md` — master cheat sheet of every pattern with examples
+- [ ] LeetCode problem links embedded in every docstring
+- [ ] Complexity curve visualizations per module
+
+<br/>
+
+---
+
+<div align="center">
+
+Built with rigor. Maintained with intent.
+
+**[⭐ Star this repo](https://github.com/soumyachk101/Python-300-DSA-Questions-And-Answers)** if it levelled you up.
+
+<br/>
+
+`arrays` · `linked lists` · `trees` · `graphs` · `dynamic programming` · `greedy` · `backtracking`
+
+</div>
